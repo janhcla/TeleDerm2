@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8095C1A29EF0C4D00487B8E /* EnlargedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8095C1929EF0C4D00487B8E /* EnlargedImageView.swift */; };
+		D80DCBB52A0988A20007680F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D80DCBB42A0988A20007680F /* Alamofire */; };
+		D80DE0C029EFFAE1005F3CF0 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B94BAE29EFE04F00CABCDC /* WidgetKit.framework */; };
+		D80DE0C329EFFAE3005F3CF0 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B94BB029EFE04F00CABCDC /* SwiftUI.framework */; };
+		D80DE0CA29F010CD005F3CF0 /* XXXXXModernCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80DE0C929F010CD005F3CF0 /* XXXXXModernCameraView.swift */; };
+		D80DE0CD29F011D2005F3CF0 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80DE0CC29F011D2005F3CF0 /* CameraController.swift */; };
+		D822B8C429EC0DC300D9075D /* DisplayPhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D822B8C329EC0DC300D9075D /* DisplayPhotosView.swift */; };
+		D822B8C629EC0DE700D9075D /* EditPhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D822B8C529EC0DE700D9075D /* EditPhotosView.swift */; };
+		D82D57B22A596D8500BE843C /* ModernCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D57B12A596D8500BE843C /* ModernCameraView.swift */; };
+		D878D7CD29E9D0BB00D3D760 /* TeleDerm2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D878D7CC29E9D0BB00D3D760 /* TeleDerm2App.swift */; };
+		D878D7CF29E9D0BB00D3D760 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D878D7CE29E9D0BB00D3D760 /* ContentView.swift */; };
+		D878D7D129E9D0BC00D3D760 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D878D7D029E9D0BC00D3D760 /* Assets.xcassets */; };
+		D878D7D429E9D0BC00D3D760 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D878D7D329E9D0BC00D3D760 /* Preview Assets.xcassets */; };
+		D878D7DB29E9D17B00D3D760 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D878D7DA29E9D17B00D3D760 /* SettingsView.swift */; };
+		D878D7DD29E9D3FF00D3D760 /* PhotoLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D878D7DC29E9D3FF00D3D760 /* PhotoLibraryView.swift */; };
+		D878D7DF29E9D48A00D3D760 /* PhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D878D7DE29E9D48A00D3D760 /* PhotosView.swift */; };
+		D878D7E129E9D51B00D3D760 /* RenamePhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D878D7E029E9D51B00D3D760 /* RenamePhotosView.swift */; };
+		D878D7E329E9D5B300D3D760 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D878D7E229E9D5B300D3D760 /* CameraView.swift */; };
+		D8B94BB429EFE04F00CABCDC /* TeleDerm2WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B94BB329EFE04F00CABCDC /* TeleDerm2WidgetBundle.swift */; };
+		D8B94BB629EFE04F00CABCDC /* TeleDerm2Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B94BB529EFE04F00CABCDC /* TeleDerm2Widget.swift */; };
+		D8B94BB929EFE05000CABCDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8B94BB829EFE05000CABCDC /* Assets.xcassets */; };
+		D8B94BBB29EFE05000CABCDC /* TeleDerm2Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D8B94BB729EFE05000CABCDC /* TeleDerm2Widget.intentdefinition */; };
+		D8B94BBC29EFE05000CABCDC /* TeleDerm2Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D8B94BB729EFE05000CABCDC /* TeleDerm2Widget.intentdefinition */; };
+		D8B94BBF29EFE05000CABCDC /* TeleDerm2WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D8B94BAC29EFE04F00CABCDC /* TeleDerm2WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D8EA78EB29EDBE2400A2997E /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EA78EA29EDBE2400A2997E /* ImageStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8B94BBD29EFE05000CABCDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D878D7C129E9D0BB00D3D760 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8B94BAB29EFE04F00CABCDC;
+			remoteInfo = TeleDerm2WidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D8B94BC029EFE05000CABCDC /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D8B94BBF29EFE05000CABCDC /* TeleDerm2WidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D8095C1929EF0C4D00487B8E /* EnlargedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnlargedImageView.swift; sourceTree = "<group>"; };
+		D80DE0C929F010CD005F3CF0 /* XXXXXModernCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XXXXXModernCameraView.swift; sourceTree = "<group>"; };
+		D80DE0CC29F011D2005F3CF0 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		D822B8C229EBE98000D9075D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D822B8C329EC0DC300D9075D /* DisplayPhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayPhotosView.swift; sourceTree = "<group>"; };
+		D822B8C529EC0DE700D9075D /* EditPhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPhotosView.swift; sourceTree = "<group>"; };
+		D82D57B12A596D8500BE843C /* ModernCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernCameraView.swift; sourceTree = "<group>"; };
+		D878D7C929E9D0BB00D3D760 /* TeleDerm2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeleDerm2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D878D7CC29E9D0BB00D3D760 /* TeleDerm2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleDerm2App.swift; sourceTree = "<group>"; };
+		D878D7CE29E9D0BB00D3D760 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D878D7D029E9D0BC00D3D760 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D878D7D329E9D0BC00D3D760 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D878D7DA29E9D17B00D3D760 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D878D7DC29E9D3FF00D3D760 /* PhotoLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryView.swift; sourceTree = "<group>"; };
+		D878D7DE29E9D48A00D3D760 /* PhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosView.swift; sourceTree = "<group>"; };
+		D878D7E029E9D51B00D3D760 /* RenamePhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenamePhotosView.swift; sourceTree = "<group>"; };
+		D878D7E229E9D5B300D3D760 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		D8B94BAC29EFE04F00CABCDC /* TeleDerm2WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TeleDerm2WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8B94BAE29EFE04F00CABCDC /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		D8B94BB029EFE04F00CABCDC /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		D8B94BB329EFE04F00CABCDC /* TeleDerm2WidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleDerm2WidgetBundle.swift; sourceTree = "<group>"; };
+		D8B94BB529EFE04F00CABCDC /* TeleDerm2Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleDerm2Widget.swift; sourceTree = "<group>"; };
+		D8B94BB729EFE05000CABCDC /* TeleDerm2Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = TeleDerm2Widget.intentdefinition; sourceTree = "<group>"; };
+		D8B94BB829EFE05000CABCDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8B94BBA29EFE05000CABCDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8EA78EA29EDBE2400A2997E /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D878D7C629E9D0BB00D3D760 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D80DCBB52A0988A20007680F /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8B94BA929EFE04F00CABCDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D80DE0C329EFFAE3005F3CF0 /* SwiftUI.framework in Frameworks */,
+				D80DE0C029EFFAE1005F3CF0 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D820D79229F19E6700B9D1BB /* Removed from app */ = {
+			isa = PBXGroup;
+			children = (
+				D878D7E229E9D5B300D3D760 /* CameraView.swift */,
+			);
+			path = "Removed from app";
+			sourceTree = "<group>";
+		};
+		D878D7C029E9D0BB00D3D760 = {
+			isa = PBXGroup;
+			children = (
+				D878D7CB29E9D0BB00D3D760 /* TeleDerm2 */,
+				D8B94BB229EFE04F00CABCDC /* TeleDerm2Widget */,
+				D8B94BAD29EFE04F00CABCDC /* Frameworks */,
+				D878D7CA29E9D0BB00D3D760 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D878D7CA29E9D0BB00D3D760 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D878D7C929E9D0BB00D3D760 /* TeleDerm2.app */,
+				D8B94BAC29EFE04F00CABCDC /* TeleDerm2WidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D878D7CB29E9D0BB00D3D760 /* TeleDerm2 */ = {
+			isa = PBXGroup;
+			children = (
+				D822B8C229EBE98000D9075D /* Info.plist */,
+				D878D7CC29E9D0BB00D3D760 /* TeleDerm2App.swift */,
+				D878D7CE29E9D0BB00D3D760 /* ContentView.swift */,
+				D82D57B12A596D8500BE843C /* ModernCameraView.swift */,
+				D878D7DA29E9D17B00D3D760 /* SettingsView.swift */,
+				D80DE0C929F010CD005F3CF0 /* XXXXXModernCameraView.swift */,
+				D878D7DC29E9D3FF00D3D760 /* PhotoLibraryView.swift */,
+				D878D7DE29E9D48A00D3D760 /* PhotosView.swift */,
+				D878D7E029E9D51B00D3D760 /* RenamePhotosView.swift */,
+				D822B8C329EC0DC300D9075D /* DisplayPhotosView.swift */,
+				D822B8C529EC0DE700D9075D /* EditPhotosView.swift */,
+				D8095C1929EF0C4D00487B8E /* EnlargedImageView.swift */,
+				D8EA78EA29EDBE2400A2997E /* ImageStore.swift */,
+				D80DE0CC29F011D2005F3CF0 /* CameraController.swift */,
+				D820D79229F19E6700B9D1BB /* Removed from app */,
+				D878D7D029E9D0BC00D3D760 /* Assets.xcassets */,
+				D878D7D229E9D0BC00D3D760 /* Preview Content */,
+			);
+			path = TeleDerm2;
+			sourceTree = "<group>";
+		};
+		D878D7D229E9D0BC00D3D760 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D878D7D329E9D0BC00D3D760 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D8B94BAD29EFE04F00CABCDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8B94BAE29EFE04F00CABCDC /* WidgetKit.framework */,
+				D8B94BB029EFE04F00CABCDC /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8B94BB229EFE04F00CABCDC /* TeleDerm2Widget */ = {
+			isa = PBXGroup;
+			children = (
+				D8B94BB329EFE04F00CABCDC /* TeleDerm2WidgetBundle.swift */,
+				D8B94BB529EFE04F00CABCDC /* TeleDerm2Widget.swift */,
+				D8B94BB729EFE05000CABCDC /* TeleDerm2Widget.intentdefinition */,
+				D8B94BB829EFE05000CABCDC /* Assets.xcassets */,
+				D8B94BBA29EFE05000CABCDC /* Info.plist */,
+			);
+			path = TeleDerm2Widget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D878D7C829E9D0BB00D3D760 /* TeleDerm2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D878D7D729E9D0BC00D3D760 /* Build configuration list for PBXNativeTarget "TeleDerm2" */;
+			buildPhases = (
+				D878D7C529E9D0BB00D3D760 /* Sources */,
+				D878D7C629E9D0BB00D3D760 /* Frameworks */,
+				D878D7C729E9D0BB00D3D760 /* Resources */,
+				D8B94BC029EFE05000CABCDC /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8B94BBE29EFE05000CABCDC /* PBXTargetDependency */,
+			);
+			name = TeleDerm2;
+			packageProductDependencies = (
+				D80DCBB42A0988A20007680F /* Alamofire */,
+			);
+			productName = TeleDerm2;
+			productReference = D878D7C929E9D0BB00D3D760 /* TeleDerm2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D8B94BAB29EFE04F00CABCDC /* TeleDerm2WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8B94BC329EFE05000CABCDC /* Build configuration list for PBXNativeTarget "TeleDerm2WidgetExtension" */;
+			buildPhases = (
+				D8B94BA829EFE04F00CABCDC /* Sources */,
+				D8B94BA929EFE04F00CABCDC /* Frameworks */,
+				D8B94BAA29EFE04F00CABCDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TeleDerm2WidgetExtension;
+			productName = TeleDerm2WidgetExtension;
+			productReference = D8B94BAC29EFE04F00CABCDC /* TeleDerm2WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D878D7C129E9D0BB00D3D760 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					D878D7C829E9D0BB00D3D760 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					D8B94BAB29EFE04F00CABCDC = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = D878D7C429E9D0BB00D3D760 /* Build configuration list for PBXProject "TeleDerm2" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D878D7C029E9D0BB00D3D760;
+			packageReferences = (
+				D80DCBB32A0988A20007680F /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = D878D7CA29E9D0BB00D3D760 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D878D7C829E9D0BB00D3D760 /* TeleDerm2 */,
+				D8B94BAB29EFE04F00CABCDC /* TeleDerm2WidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D878D7C729E9D0BB00D3D760 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D878D7D429E9D0BC00D3D760 /* Preview Assets.xcassets in Resources */,
+				D878D7D129E9D0BC00D3D760 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8B94BAA29EFE04F00CABCDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8B94BB929EFE05000CABCDC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D878D7C529E9D0BB00D3D760 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D822B8C429EC0DC300D9075D /* DisplayPhotosView.swift in Sources */,
+				D878D7DB29E9D17B00D3D760 /* SettingsView.swift in Sources */,
+				D80DE0CD29F011D2005F3CF0 /* CameraController.swift in Sources */,
+				D878D7E329E9D5B300D3D760 /* CameraView.swift in Sources */,
+				D8EA78EB29EDBE2400A2997E /* ImageStore.swift in Sources */,
+				D822B8C629EC0DE700D9075D /* EditPhotosView.swift in Sources */,
+				D878D7CF29E9D0BB00D3D760 /* ContentView.swift in Sources */,
+				D82D57B22A596D8500BE843C /* ModernCameraView.swift in Sources */,
+				D878D7DF29E9D48A00D3D760 /* PhotosView.swift in Sources */,
+				D878D7CD29E9D0BB00D3D760 /* TeleDerm2App.swift in Sources */,
+				D80DE0CA29F010CD005F3CF0 /* XXXXXModernCameraView.swift in Sources */,
+				D878D7DD29E9D3FF00D3D760 /* PhotoLibraryView.swift in Sources */,
+				D878D7E129E9D51B00D3D760 /* RenamePhotosView.swift in Sources */,
+				D8B94BBC29EFE05000CABCDC /* TeleDerm2Widget.intentdefinition in Sources */,
+				D8095C1A29EF0C4D00487B8E /* EnlargedImageView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8B94BA829EFE04F00CABCDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8B94BB629EFE04F00CABCDC /* TeleDerm2Widget.swift in Sources */,
+				D8B94BBB29EFE05000CABCDC /* TeleDerm2Widget.intentdefinition in Sources */,
+				D8B94BB429EFE04F00CABCDC /* TeleDerm2WidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8B94BBE29EFE05000CABCDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8B94BAB29EFE04F00CABCDC /* TeleDerm2WidgetExtension */;
+			targetProxy = D8B94BBD29EFE05000CABCDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D878D7D529E9D0BC00D3D760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D878D7D629E9D0BC00D3D760 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D878D7D829E9D0BC00D3D760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TeleDerm2/Preview Content\"";
+				DEVELOPMENT_TEAM = ARQN5UD84L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TeleDerm2/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "TeleDerm2 need access to the camera to capture photos and upload images";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "TeleDerm2 need access to the photo library to be able to upload images";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jhc.TeleDerm2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D878D7D929E9D0BC00D3D760 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TeleDerm2/Preview Content\"";
+				DEVELOPMENT_TEAM = ARQN5UD84L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TeleDerm2/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "TeleDerm2 need access to the camera to capture photos and upload images";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "TeleDerm2 need access to the photo library to be able to upload images";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jhc.TeleDerm2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D8B94BC129EFE05000CABCDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ARQN5UD84L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TeleDerm2Widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TeleDerm2Widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jhc.TeleDerm2.TeleDerm2Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8B94BC229EFE05000CABCDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ARQN5UD84L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TeleDerm2Widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TeleDerm2Widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jhc.TeleDerm2.TeleDerm2Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D878D7C429E9D0BB00D3D760 /* Build configuration list for PBXProject "TeleDerm2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D878D7D529E9D0BC00D3D760 /* Debug */,
+				D878D7D629E9D0BC00D3D760 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D878D7D729E9D0BC00D3D760 /* Build configuration list for PBXNativeTarget "TeleDerm2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D878D7D829E9D0BC00D3D760 /* Debug */,
+				D878D7D929E9D0BC00D3D760 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8B94BC329EFE05000CABCDC /* Build configuration list for PBXNativeTarget "TeleDerm2WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8B94BC129EFE05000CABCDC /* Debug */,
+				D8B94BC229EFE05000CABCDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D80DCBB32A0988A20007680F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = versionRange;
+				maximumVersion = 5.5.0;
+				minimumVersion = 5.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D80DCBB42A0988A20007680F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D80DCBB32A0988A20007680F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D878D7C129E9D0BB00D3D760 /* Project object */;
+}

@@ -12,6 +12,7 @@ struct ContentView: View {
     @State private var showPhotoLibrary = false
     @State private var isCameraViewPresented = false
     @State private var images: [CustomImage] = []
+    @State private var capturedImage: UIImage? = nil  // New line to store the captured image
     
     @Binding var isCameraPresentedFromDeepLink: Bool
     
@@ -29,8 +30,13 @@ struct ContentView: View {
                         Text("Take a picture")
                     }
                     .sheet(isPresented: $isCameraViewPresented) {
-                        ModernCameraView(image: $images)
+                        ModernCameraView(image: $capturedImage)  // Modified line
                             .environmentObject(imageStore)
+                            .onDisappear {
+                                if let captured = capturedImage {
+                                    imageStore.add(captured)
+                                }
+                            }
                     }
                     .padding()
                 }

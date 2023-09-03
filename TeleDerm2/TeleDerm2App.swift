@@ -3,7 +3,7 @@
 //  TeleDerm2
 //
 //  Created by Jan H. Clausen on 14/04/2023.
-//
+////
 
 import SwiftUI
 

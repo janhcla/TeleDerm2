@@ -13,27 +13,28 @@ struct ModernCameraView: UIViewControllerRepresentable {
     @Environment(\.presentationMode) private var presentationMode
 
     class Coordinator: NSObject, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+        var parent: ModernCameraView
         @Binding var image: UIImage?
-        @Binding var presentationMode: PresentationMode
 
-        init(image: Binding<UIImage?>, presentationMode: Binding<PresentationMode>) {
-            _image = image
-            _presentationMode = presentationMode
+        init(parent: ModernCameraView) {
+            self.parent = parent
+            _image = parent.$image
         }
 
         func imagePickerController(_ picker: UIImagePickerController,
                                    didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
             let uiImage = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
             image = uiImage
+            parent.presentationMode.wrappedValue.dismiss()
         }
 
         func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-            presentationMode.dismiss()
+            parent.presentationMode.wrappedValue.dismiss()
         }
     }
 
     func makeCoordinator() -> Coordinator {
-        return Coordinator(image: $image, presentationMode: $presentationMode)
+        Coordinator(parent: self)
     }
 
     func makeUIViewController(context: UIViewControllerRepresentableContext<ModernCameraView>) -> UIImagePickerController {
